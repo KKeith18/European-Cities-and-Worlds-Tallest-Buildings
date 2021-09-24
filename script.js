@@ -100,7 +100,7 @@ let bar_data = d3.csv('buildings.csv',d3.autoType).then(bar_data =>{
             d3.select('.floors').text(d.floors)
             d3.select('.Completed').text(d.completed)
             d3.select('.image')
-            .attr('src',"/img/"+ d.image)
+            .attr('src',"img/"+ d.image)
             //d3.select('.image').attr('src', d.image)
             console.log(d.image);
         })
