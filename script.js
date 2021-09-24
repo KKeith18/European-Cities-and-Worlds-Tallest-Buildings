@@ -44,7 +44,7 @@ let data = d3.csv('cities.csv', d3.autoType).then(data=>{
 	.attr("text-anchor", 'center')
         .text(function(d){
             if (d.population > 1000000){
-                return d.city;
+                return d.country;
             }
             else if (d.population<1000000){
                 return null;
