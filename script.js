@@ -41,6 +41,7 @@ let data = d3.csv('cities.csv', d3.autoType).then(data=>{
         .data(filtered_data)
         .enter()
         .append("text")
+	.attr("text-anchor", 'center')
         .text(function(d){
             if (d.population > 1000000){
                 return d.city;
